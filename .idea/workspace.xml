@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d3ead9e-3b71-4b81-be69-aeecf09a5762" name="Changes" comment="add pom">
-      <change afterPath="$PROJECT_DIR$/src/main/java/generate_user_data/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/generate_user_data/UserGenerator.java" afterDir="false" />
+    <list default="true" id="0d3ead9e-3b71-4b81-be69-aeecf09a5762" name="Changes" comment="add yandex driver">
+      <change afterPath="$PROJECT_DIR$/src/test/java/settings/BaseUISettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,42 @@
       <option name="project" value="LOCAL" />
       <updated>1676803149149</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add classes for generating user data">
+      <created>1676803222133</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676803222133</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add pojo classes">
+      <created>1676803273686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676803273686</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add settings">
+      <created>1676803338302</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676803338302</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add waiting class">
+      <created>1676803460047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676803460047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add yandex driver">
+      <created>1676803495243</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676803495243</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,6 +105,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pom" />
+    <MESSAGE value="add classes for generating user data" />
+    <MESSAGE value="add pojo classes" />
+    <MESSAGE value="add settings" />
+    <MESSAGE value="add waiting class" />
+    <MESSAGE value="add yandex driver" />
+    <option name="LAST_COMMIT_MESSAGE" value="add yandex driver" />
   </component>
 </project>
