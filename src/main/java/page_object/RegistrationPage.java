@@ -7,17 +7,17 @@ import settings.BaseSettings;
 public class RegistrationPage extends BaseSettings {
 
     //имя
-    private final By nameInput = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[1]/div/div/input");
+    private final By nameInput = By.xpath(".//label[text() = 'Имя']/../input");
     //email
-    private final By emailInput = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[2]/div/div/input");
+    private final By emailInput = By.xpath(".//label[text() = 'Email']/../input");
     //password
-    private final By passwordInput = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[3]/div/div/input");
+    private final By passwordInput = By.cssSelector("input[name='Пароль']");
     //button
-    private final By registrationButton = By.xpath("//*[@id=\"root\"]/div/main/div/form/button");
+    private final By registrationButton = By.xpath(".//button[text() = 'Зарегистрироваться']");
 
-    private final By warningMessage = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[3]/div/p");
+    private final By warningMessage = By.className("input__error");
 
-    private final By loginButton = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    private final By loginButton = By.cssSelector("a[href='/login']");
 
 
     public RegistrationPage(WebDriver driver) {

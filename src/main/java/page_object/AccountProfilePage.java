@@ -9,15 +9,12 @@ import settings.BaseSettings;
 import java.time.Duration;
 
 public class AccountProfilePage extends BaseSettings {
-    private final By profileLink = By.xpath(".//*[text() = 'Профиль']");
-    private final By nameField = By.xpath("//*[@id=\"root\"]/div/main/div/div/div/ul/li[1]/div/div/input");
-    private final By emailField = By.xpath("//*[@id=\"root\"]/div/main/div/div/div/ul/li[2]/div/div/input");
-    private final By passwordField = By.xpath("//*[@id=\"root\"]/div/main/div/div/div/ul/li[3]/div/div/input");
-    private final By exitButton = By.xpath("//*[@id=\"root\"]/div/main/div/nav/ul/li[3]/button");
+    private final By profileLink = By.xpath(".//a[text() = 'Профиль']");
+    private final By exitButton = By.xpath(".//button[text() = 'Выход']");
 
-    private final By logoLink = By.xpath("//*[@id=\"root\"]/div/header/nav/div/a");
+    private final By logoLink = By.className("AppHeader_header__logo__2D0X2");
 
-    private final By constructorLink = By.xpath("//*[@id=\"root\"]/div/header/nav/ul/li[1]/a");
+    private final By constructorLink = By.className("AppHeader_header__link__3D_hX");
 
     public AccountProfilePage(WebDriver driver) {
         super(driver);

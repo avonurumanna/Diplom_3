@@ -12,15 +12,17 @@ import static org.hamcrest.CoreMatchers.containsString;
 public class RedirectionTest extends BaseUISettings {
 
     public final String createOrderButtonText = "Оформить заказ";
-    private final String profileLinkText = "Профиль";
+    public final String profileLinkText = "Профиль";
+    public final String userTestLogin = "testemail456@gmail.com";
+    public final String userTestPassword = "1234567";
 
     @Test
     @DisplayName("Check redirection from account profile page to main page using click on logo")
-    public void clickLogoExpectedRedirectToMainPage() {
+    public void clickLogoExpectedRedirectToMainPageTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickAccountButton();
@@ -28,16 +30,16 @@ public class RedirectionTest extends BaseUISettings {
         accountProfilePage.waitUnitPageLoaded(8);
         accountProfilePage.clickLogoLink();
         mainPage.waitUnitPageLoaded(8);
-        MatcherAssert.assertThat(mainPage.getTextLoginButton(), containsString(createOrderButtonText));
+        MatcherAssert.assertThat(mainPage.getTextCreateOrderButton(), containsString(createOrderButtonText));
     }
 
     @Test
     @DisplayName("Check redirection from account profile page to main page using constructor link")
-    public void clickConstructorExpectedRedirectToMainPage() {
+    public void clickConstructorExpectedRedirectToMainPageTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickAccountButton();
@@ -45,16 +47,16 @@ public class RedirectionTest extends BaseUISettings {
         accountProfilePage.waitUnitPageLoaded(10);
         accountProfilePage.clickConstructorLink();
         mainPage.waitUnitPageLoaded(20);
-        MatcherAssert.assertThat(mainPage.getTextLoginButton(), containsString(createOrderButtonText));
+        MatcherAssert.assertThat(mainPage.getTextCreateOrderButton(), containsString(createOrderButtonText));
     }
 
     @Test
     @DisplayName("Check redirection from main page page to account profile using Account profile button")
-    public void redirectToAccountProfileExpectedAccountProfileOpened() {
+    public void redirectToAccountProfileExpectedAccountProfileOpenedTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickAccountButton();

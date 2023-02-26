@@ -10,21 +10,13 @@ import java.time.Duration;
 
 public class LoginPage extends BaseSettings {
 
-    //заголовок
-    private final By header = By.xpath(".//*[text() = 'Вход']");
+    private final By header = By.xpath(".//h2[text() = 'Вход']");
+    private final By emailInput = By.cssSelector("input[name='name']");
 
-
-    //email
-    private final By emailInput = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[1]/div/div/input");
-
-    //password
-    private final By passwordInput = By.xpath("//*[@id=\"root\"]/div/main/div/form/fieldset[2]/div/div/input");
-    //login
-    private final By loginButton = By.xpath("//*[@id=\"root\"]/div/main/div/form/button");
-    //registration
-    private final By registrationLink = By.xpath("//*[@id=\"root\"]/div/main/div/div/p[1]/a");
-    //forgot password
-    private final By forgotPasswordLink = By.xpath("//*[@id=\"root\"]/div/main/div/div/p[2]/a");
+    private final By passwordInput = By.cssSelector("input[name='Пароль']");
+    private final By loginButton = By.xpath(".//button[text() = 'Войти']");
+    private final By registrationLink = By.cssSelector("a[href='/register']");
+    private final By forgotPasswordLink = By.cssSelector("a[href='/forgot-password']");
 
 
     public LoginPage(WebDriver driver) {

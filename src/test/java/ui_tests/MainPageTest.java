@@ -13,7 +13,7 @@ public class MainPageTest extends BaseUISettings {
 
     @Test
     @DisplayName("Check switching from Buns section to Sauces section")
-    public void clickSauceSectionExpectedSwitchedToSauceSection() {
+    public void clickSauceSectionExpectedSwitchedToSauceSectionTest() {
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickSauceSectionButton();
         MatcherAssert.assertThat(mainPage.getSauceSectionClass(), containsString(indicatorClass));
@@ -21,7 +21,7 @@ public class MainPageTest extends BaseUISettings {
 
     @Test
     @DisplayName("Check switching from Buns section to Filling section")
-    public void clickFillingSectionExpectedSwitchedToFillingSection() {
+    public void clickFillingSectionExpectedSwitchedToFillingSectionTest() {
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickFillingSectionButton();
         MatcherAssert.assertThat(mainPage.getFillingSectionClass(), containsString(indicatorClass));
@@ -29,7 +29,7 @@ public class MainPageTest extends BaseUISettings {
 
     @Test
     @DisplayName("Check switching from Filling section to Buns section")
-    public void clickBunSectionExpectedSwitchedToBunSection() {
+    public void clickBunSectionExpectedSwitchedToBunSectionTest() {
         mainPage.waitUnitPageLoaded(8);
         mainPage.clickFillingSectionButton();
         mainPage.clickBunSectionButton();

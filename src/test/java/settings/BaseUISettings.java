@@ -9,16 +9,17 @@ import page_object.MainPage;
 
 public class BaseUISettings {
 
+
     private final String url = "https://stellarburgers.nomoreparties.site/";
-    private final String chrome_browser = "Chrome";
-    private final String yandex_browser = "Yandex";
+    private final String chromeBrowser = "Chrome";
+    private final String yandexBrowser = "Yandex";
     protected WebDriver driver;
     protected MainPage mainPage;
 
     @Before
     public void startUp() {
         WebDriverManager.chromedriver().setup();
-        selectBrowser(chrome_browser);
+        selectBrowser(chromeBrowser);
         mainPage = new MainPage(driver);
         driver.get(url);
         driver.manage().window().maximize();
@@ -26,9 +27,9 @@ public class BaseUISettings {
     }
 
     public void selectBrowser(String browser) {
-        if (browser.equals(chrome_browser)) {
+        if (browser.equals(chromeBrowser)) {
             driver = new ChromeDriver();
-        } else if (browser.equals(yandex_browser)) {
+        } else if (browser.equals(yandexBrowser)) {
             System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\yandex_browser\\yandexdriver.exe");
             driver = new ChromeDriver();
         }

@@ -12,12 +12,13 @@ import java.time.Duration;
 public class MainPage extends BaseSettings {
 
     //login
-    private final By loginButton = By.xpath("//*[@id=\"root\"]/div/main/section[2]/div/button");
-    private final By accountButton = By.xpath("//*[@id=\"root\"]/div/header/nav/a");
-    private final By bunSectionButton = By.xpath("/html/body/div[1]/div/main/section[1]/div[1]/div[1]");
-    private final By sauceSectionButton = By.xpath("/html/body/div[1]/div/main/section[1]/div[1]/div[2]");
-    private final By fillingSectionButton = By.xpath("/html/body/div[1]/div/main/section[1]/div[1]/div[3]");
-    private final By burgerConstructorHeader = By.xpath(".//*[text() = 'Соберите бургер']");
+    private final By loginButton = By.xpath(".//button[text() = 'Войти в аккаунт']");
+    private final By createOrderButton = By.xpath(".//button[text() = 'Оформить заказ']");
+    private final By accountButton = By.cssSelector("a[href='/account']");
+    private final By bunSectionButton = By.xpath(".//span[text() = 'Булки']/..");
+    private final By sauceSectionButton = By.xpath(".//span[text() = 'Соусы']/..");
+    private final By fillingSectionButton = By.xpath(".//span[text() = 'Начинки']/..");
+    private final By burgerConstructorHeader = By.xpath(".//h1[text() = 'Соберите бургер']");
 
 
     public MainPage(WebDriver driver) {
@@ -29,12 +30,8 @@ public class MainPage extends BaseSettings {
         driver.findElement(loginButton).click();
     }
 
-    public String getTextLoginButton() {
-        return driver.findElement(loginButton).getText();
-    }
-
-    public String getTextHeader() {
-        return driver.findElement(burgerConstructorHeader).getText();
+    public String getTextCreateOrderButton() {
+        return driver.findElement(createOrderButton).getText();
     }
 
     public void clickAccountButton() {

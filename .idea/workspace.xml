@@ -4,13 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d3ead9e-3b71-4b81-be69-aeecf09a5762" name="Changes" comment="add ui tests" />
+    <list default="true" id="0d3ead9e-3b71-4b81-be69-aeecf09a5762" name="Changes" comment="changes according to the reviewer comments:&#10;names of tests were changes according to format ***Test&#10;locators were changed&#10;for test data were created new variables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_object/AccountProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_object/AccountProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_object/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_object/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_object/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_object/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_object/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_object/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_object/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/settings/BaseUISettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/settings/BaseUISettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LogOffTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LogOffTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RedirectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RedirectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1f0f9bad-26eb-4d05-a63a-3d45e095f6c8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/22324e7e-0f26-45fe-850d-a00c6017b136-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/31750be6-7fd4-49ba-a1d2-031503a594d1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/41013c95-e9d7-411d-8834-2c43649b7e6f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/49532c52-fd25-4e98-b7e9-cbd31dde4fa2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/50d7360a-aa8b-4987-9db4-82d99cb9aa67-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9603cc96-c4c3-48e4-bd94-abea411a3132-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ad9c1408-9b7c-40d6-a6de-007000d39de7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c3720af7-a4a2-40a1-adc1-0e1b782883d9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/daae013e-cff9-4c31-ae37-857e4714ce86-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e9137585-0ea7-4be0-b5b8-305f7db8d491-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ff440a1a-6e46-407b-9957-f90935ee3f83-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.LogOffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.LogOffTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.LoginTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.LoginTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.MainPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.MainPageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.RedirectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.RedirectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.RegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ui_tests.RegistrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ui_tests.LogOffTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ui_tests.LogOffTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ui_tests.LoginTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ui_tests.LoginTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ui_tests.MainPageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ui_tests.MainPageTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ui_tests.RedirectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ui_tests.RedirectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ui_tests.RegistrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ui_tests.RegistrationTest.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -26,7 +67,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/cygwin/home/Peka/Diplom_2&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/cygwin/home/Peka/Diplom_3&quot;
   }
 }</component>
   <component name="RunAnythingCache">
@@ -34,6 +75,94 @@
       <command value="mvn verify" />
       <command value="mvn clean test" />
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ui_tests in Diplom_3">
+    <configuration name="LogOffTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui_tests" />
+      <option name="MAIN_CLASS_NAME" value="ui_tests.LogOffTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOffTest.clickExitButtonOnAccountProfileExpectedUserLoggedOffTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui_tests" />
+      <option name="MAIN_CLASS_NAME" value="ui_tests.LogOffTest" />
+      <option name="METHOD_NAME" value="clickExitButtonOnAccountProfileExpectedUserLoggedOffTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkLoginUsingAccountProfileButtonExpectedUserLoggedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui_tests" />
+      <option name="MAIN_CLASS_NAME" value="ui_tests.LoginTest" />
+      <option name="METHOD_NAME" value="checkLoginUsingAccountProfileButtonExpectedUserLoggedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkLoginUsingButtonOnForgotPasswordPageExpectedUserLoggedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui_tests" />
+      <option name="MAIN_CLASS_NAME" value="ui_tests.LoginTest" />
+      <option name="METHOD_NAME" value="checkLoginUsingButtonOnForgotPasswordPageExpectedUserLoggedTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ui_tests in Diplom_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui_tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ui_tests in Diplom_3" />
+        <item itemvalue="JUnit.LoginTest.checkLoginUsingAccountProfileButtonExpectedUserLoggedTest" />
+        <item itemvalue="JUnit.LoginTest.checkLoginUsingButtonOnForgotPasswordPageExpectedUserLoggedTest" />
+        <item itemvalue="JUnit.LogOffTest" />
+        <item itemvalue="JUnit.LogOffTest.clickExitButtonOnAccountProfileExpectedUserLoggedOffTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676805246538</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changes according to the reviewer comments:&#10;names of tests were changes according to format ***Test&#10;locators were changed&#10;for test data were created new variables">
+      <created>1677408166547</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677408166547</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changes according to the reviewer comments:&#10;names of tests were changes according to format ***Test&#10;locators were changed&#10;for test data were created new variables">
+      <created>1677408417227</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677408417227</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +251,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -122,6 +277,7 @@
     <MESSAGE value="add yandex driver" />
     <MESSAGE value="add settings" />
     <MESSAGE value="add ui tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ui tests" />
+    <MESSAGE value="changes according to the reviewer comments:&#10;names of tests were changes according to format ***Test&#10;locators were changed&#10;for test data were created new variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes according to the reviewer comments:&#10;names of tests were changes according to format ***Test&#10;locators were changed&#10;for test data were created new variables" />
   </component>
 </project>

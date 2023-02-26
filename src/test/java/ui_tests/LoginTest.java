@@ -13,47 +13,49 @@ import static org.hamcrest.CoreMatchers.containsString;
 public class LoginTest extends BaseUISettings {
 
     public final String createOrderButtonText = "Оформить заказ";
+    public final String userTestLogin = "testemail456@gmail.com";
+    public final String userTestPassword = "1234567";
 
     @Test
     @DisplayName("Check login using Account Profile button")
-    public void checkLoginUsingAccountProfileButtonExpectedUserLogged() {
+    public void checkLoginUsingAccountProfileButtonExpectedUserLoggedTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
-        MatcherAssert.assertThat(mainPage.getTextLoginButton(), containsString(createOrderButtonText));
+        MatcherAssert.assertThat(mainPage.getTextCreateOrderButton(), containsString(createOrderButtonText));
     }
 
     @Test
     @DisplayName("Check login using button on registration page")
-    public void checkLoginUsingButtonOnRegistrationPageExpectedUserLogged() {
+    public void checkLoginUsingButtonOnRegistrationPageExpectedUserLoggedTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickRegistrationLink();
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.clickLoginButton();
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
-        MatcherAssert.assertThat(mainPage.getTextLoginButton(), containsString(createOrderButtonText));
+        MatcherAssert.assertThat(mainPage.getTextCreateOrderButton(), containsString(createOrderButtonText));
     }
 
     @Test
     @DisplayName("Check login using button on forgot password page")
-    public void checkLoginUsingButtonOnForgotPasswordPageExpectedUserLogged() {
+    public void checkLoginUsingButtonOnForgotPasswordPageExpectedUserLoggedTest() {
         mainPage.clickAccountButton();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickForgotPasswordLink();
         ForgotPasswordPage forgotPasswordPage = new ForgotPasswordPage(driver);
         forgotPasswordPage.clickLoginLink();
-        loginPage.fillEmail("testemail456@gmail.com");
-        loginPage.fillPassword("1234567");
+        loginPage.fillEmail(userTestLogin);
+        loginPage.fillPassword(userTestPassword);
         loginPage.clickLoginButton();
         mainPage.waitUnitPageLoaded(8);
-        MatcherAssert.assertThat(mainPage.getTextLoginButton(), containsString(createOrderButtonText));
+        MatcherAssert.assertThat(mainPage.getTextCreateOrderButton(), containsString(createOrderButtonText));
     }
 
 

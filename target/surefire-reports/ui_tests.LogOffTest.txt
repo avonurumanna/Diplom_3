@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ui_tests.LogOffTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.09 s - in ui_tests.LogOffTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.885 s - in ui_tests.LogOffTest

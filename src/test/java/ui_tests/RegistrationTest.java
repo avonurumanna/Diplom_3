@@ -16,8 +16,12 @@ public class RegistrationTest extends BaseUISettings {
 
     public final String warningMessage = "Некорректный пароль";
     public final String loginHeaderText = "Вход";
+    public final String userTestLogin = "testemail456@gmail.com";
+    public final String userTestPassword = "12345";
+    public final String userTestName = "test";
 
     public User user;
+
 
     @Before
     public void setUp() {
@@ -27,7 +31,7 @@ public class RegistrationTest extends BaseUISettings {
 
     @Test
     @DisplayName("Check user registration")
-    public void registerUserExpectedUserRegistered() {
+    public void registerUserExpectedUserRegisteredTest() {
         mainPage.clickLoginButton();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickRegistrationLink();
@@ -44,14 +48,14 @@ public class RegistrationTest extends BaseUISettings {
 
     @Test
     @DisplayName("Check warning message appeared if input password which contains 5 characters ")
-    public void passwordContainsFiveCharactersExpectedWarningMessageAppeared() {
+    public void passwordContainsFiveCharactersExpectedWarningMessageAppearedTest() {
         mainPage.clickLoginButton();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickRegistrationLink();
         RegistrationPage registrationPage = new RegistrationPage(driver);
-        registrationPage.fillEmail("testemail456@gmail.com");
-        registrationPage.fillName("test");
-        registrationPage.fillPassword("12345");
+        registrationPage.fillEmail(userTestLogin);
+        registrationPage.fillName(userTestName);
+        registrationPage.fillPassword(userTestPassword);
         registrationPage.clickRegistrationButton();
         MatcherAssert.assertThat(registrationPage.getWarningMessage(), containsString(warningMessage));
 

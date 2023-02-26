@@ -7,7 +7,7 @@ import settings.BaseSettings;
 public class ForgotPasswordPage extends BaseSettings {
 
 
-    private final By loginLink = By.xpath("//*[@id=\"root\"]/div/main/div/div/p/a");
+    private final By loginLink = By.cssSelector("a[href='/login']");
 
     public ForgotPasswordPage(WebDriver driver) {
         super(driver);
